@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Revver.Interviews.Blazor.props" />
+</Project>
