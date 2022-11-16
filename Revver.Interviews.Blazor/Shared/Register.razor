@@ -14,27 +14,27 @@
             }
         </div>
 }
-<EditForm Model="_userForRegistration" OnValidSubmit="@RegisterUser" class="card card-body bg-light mt-5">
+<EditForm Model="userForRegistration" OnValidSubmit="@RegisterUser" class="card card-body bg-light mt-5">
     <DataAnnotationsValidator />
     <div class="form-group row">
         <label for="email" class="col-md-2 col-form-label">Email:</label>
         <div class="col-md-10">
-            <InputText id="email" class="form-control" @bind-Value="_userForRegistration.Email" />
-            <ValidationMessage For="@(() => _userForRegistration.Email)" />
+            <InputText id="email" class="form-control" @bind-Value="userForRegistration.Email" />
+            <ValidationMessage For="@(() => userForRegistration.Email)" />
         </div>
     </div>
     <div class="form-group row">
         <label for="password" class="col-md-2 col-form-label">Password:</label>
         <div class="col-md-10">
-            <InputText type="password" id="password" class="form-control" @bind-Value="_userForRegistration.Password" />
-            <ValidationMessage For="@(() => _userForRegistration.Password)" />
+            <InputText type="password" id="password" class="form-control" @bind-Value="userForRegistration.Password" />
+            <ValidationMessage For="@(() => userForRegistration.Password)" />
         </div>
     </div>
     <div class="form-group row">
         <label for="confirm" class="col-md-2 col-form-label">Confirm Password:</label>
         <div class="col-md-10">
-            <InputText type="password" id="confirm" class="form-control" @bind-Value="_userForRegistration.ConfirmPassword" />
-            <ValidationMessage For="@(() => _userForRegistration.ConfirmPassword)" />
+            <InputText type="password" id="confirm" class="form-control" @bind-Value="userForRegistration.ConfirmPassword" />
+            <ValidationMessage For="@(() => userForRegistration.ConfirmPassword)" />
         </div>
     </div>
     <div class="row">
@@ -44,7 +44,7 @@
     </div>
 </EditForm>
 @code {
-    private UserForRegistrationDto _userForRegistration = new UserForRegistrationDto();
+    private UserForRegistrationDto userForRegistration = new UserForRegistrationDto();
 
     [Inject]
     public NavigationManager NavigationManager { get; set; }
@@ -52,7 +52,7 @@
     public IEnumerable<string> Errors { get; set; }
     public async Task RegisterUser()
     {
-        var content = JsonSerializer.Serialize(_userForRegistration);
-        Http.PostAsJsonAsync<UserForRegistrationDto>("http://localhost:7100/api/Register", _userForRegistration);
+        var content = JsonSerializer.Serialize(userForRegistration);
+        await Http.PostAsJsonAsync<UserForRegistrationDto>("http://localhost:7100/api/Register", userForRegistration);
     }
 }
