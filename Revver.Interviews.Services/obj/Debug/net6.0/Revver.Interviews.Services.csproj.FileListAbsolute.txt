@@ -1,0 +1,5 @@
+C:\Code\Interviews\Blazor\Revver.Interviews.Services\obj\Debug\net6.0\Revver.Interviews.Services.csproj.AssemblyReference.cache
+C:\Code\Interviews\Blazor\Revver.Interviews.Services\obj\Debug\net6.0\Revver.Interviews.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Code\Interviews\Blazor\Revver.Interviews.Services\obj\Debug\net6.0\Revver.Interviews.Services.AssemblyInfoInputs.cache
+C:\Code\Interviews\Blazor\Revver.Interviews.Services\obj\Debug\net6.0\Revver.Interviews.Services.AssemblyInfo.cs
+C:\Code\Interviews\Blazor\Revver.Interviews.Services\obj\Debug\net6.0\Revver.Interviews.Services.csproj.CoreCompileInputs.cache

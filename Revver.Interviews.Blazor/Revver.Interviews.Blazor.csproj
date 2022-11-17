@@ -7,8 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="Shared\RegistrationResponseDto.cs" />
-    <Content Include="Shared\UserRegistrationDTO.cs" />
+    <Compile Remove="Services\RegistrationResponseDto.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Services\RegistrationResponseDto.cs" />
   </ItemGroup>
 
   <ItemGroup>

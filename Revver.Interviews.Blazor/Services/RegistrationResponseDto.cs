@@ -1,4 +1,4 @@
-﻿namespace Revver.Interviews.Blazor.Shared
+﻿namespace Revver.Interviews.Blazor.Services
 {
     public class RegistrationResponseDto
     {

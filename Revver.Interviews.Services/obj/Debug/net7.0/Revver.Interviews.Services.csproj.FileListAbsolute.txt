@@ -1,0 +1,16 @@
+C:\Code\Interviews\Blazor\Revver.Interviews.Services\bin\Debug\net7.0\Revver.Interviews.Blazor.staticwebassets.runtime.json
+C:\Code\Interviews\Blazor\Revver.Interviews.Services\bin\Debug\net7.0\Revver.Interviews.Services.deps.json
+C:\Code\Interviews\Blazor\Revver.Interviews.Services\bin\Debug\net7.0\Revver.Interviews.Services.dll
+C:\Code\Interviews\Blazor\Revver.Interviews.Services\bin\Debug\net7.0\Revver.Interviews.Services.pdb
+C:\Code\Interviews\Blazor\Revver.Interviews.Services\bin\Debug\net7.0\Revver.Interviews.Blazor.dll
+C:\Code\Interviews\Blazor\Revver.Interviews.Services\bin\Debug\net7.0\Revver.Interviews.Blazor.pdb
+C:\Code\Interviews\Blazor\Revver.Interviews.Services\obj\Debug\net7.0\Revver.Interviews.Services.csproj.AssemblyReference.cache
+C:\Code\Interviews\Blazor\Revver.Interviews.Services\obj\Debug\net7.0\Revver.Interviews.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Code\Interviews\Blazor\Revver.Interviews.Services\obj\Debug\net7.0\Revver.Interviews.Services.AssemblyInfoInputs.cache
+C:\Code\Interviews\Blazor\Revver.Interviews.Services\obj\Debug\net7.0\Revver.Interviews.Services.AssemblyInfo.cs
+C:\Code\Interviews\Blazor\Revver.Interviews.Services\obj\Debug\net7.0\Revver.Interviews.Services.csproj.CoreCompileInputs.cache
+C:\Code\Interviews\Blazor\Revver.Interviews.Services\obj\Debug\net7.0\Revver.Interviews.Services.csproj.CopyComplete
+C:\Code\Interviews\Blazor\Revver.Interviews.Services\obj\Debug\net7.0\Revver.Interviews.Services.dll
+C:\Code\Interviews\Blazor\Revver.Interviews.Services\obj\Debug\net7.0\refint\Revver.Interviews.Services.dll
+C:\Code\Interviews\Blazor\Revver.Interviews.Services\obj\Debug\net7.0\Revver.Interviews.Services.pdb
+C:\Code\Interviews\Blazor\Revver.Interviews.Services\obj\Debug\net7.0\ref\Revver.Interviews.Services.dll

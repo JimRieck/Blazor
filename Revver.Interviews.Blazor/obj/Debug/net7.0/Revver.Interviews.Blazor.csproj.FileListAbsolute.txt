@@ -1,3 +1,4 @@
+C:\Code\Interviews\Blazor\Revver.Interviews.Blazor\bin\Debug\net7.0\wwwroot\_framework\System.Private.CoreLib.dll.gz
 C:\Code\Interviews\Blazor\Revver.Interviews.Blazor\bin\Debug\net7.0\wwwroot\_framework\blazor.boot.json
 C:\Code\Interviews\Blazor\Revver.Interviews.Blazor\bin\Debug\net7.0\wwwroot\_framework\blazor.webassembly.js
 C:\Code\Interviews\Blazor\Revver.Interviews.Blazor\bin\Debug\net7.0\wwwroot\_framework\dotnet.7.0.0.amub20uvka.js
@@ -200,7 +201,6 @@ C:\Code\Interviews\Blazor\Revver.Interviews.Blazor\bin\Debug\net7.0\wwwroot\_fra
 C:\Code\Interviews\Blazor\Revver.Interviews.Blazor\bin\Debug\net7.0\wwwroot\_framework\System.Xml.XPath.dll
 C:\Code\Interviews\Blazor\Revver.Interviews.Blazor\bin\Debug\net7.0\wwwroot\_framework\System.Xml.XPath.XDocument.dll
 C:\Code\Interviews\Blazor\Revver.Interviews.Blazor\bin\Debug\net7.0\wwwroot\_framework\WindowsBase.dll
-C:\Code\Interviews\Blazor\Revver.Interviews.Blazor\bin\Debug\net7.0\wwwroot\_framework\System.Private.CoreLib.dll.gz
 C:\Code\Interviews\Blazor\Revver.Interviews.Blazor\bin\Debug\net7.0\wwwroot\_framework\System.ValueTuple.dll.gz
 C:\Code\Interviews\Blazor\Revver.Interviews.Blazor\bin\Debug\net7.0\wwwroot\_framework\System.Web.dll.gz
 C:\Code\Interviews\Blazor\Revver.Interviews.Blazor\bin\Debug\net7.0\wwwroot\_framework\Microsoft.Extensions.Configuration.Binder.dll.gz
