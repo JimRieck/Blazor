@@ -15,7 +15,7 @@ namespace Revver.Interviews.Blazor.API
         }
 
         [Function("Register")]
-        public HttpResponseData Run([HttpTrigger(AuthorizationLevel.Anonymous, "post")] HttpRequestData req)
+        public HttpResponseData Run([HttpTrigger(AuthorizationLevel.Function, "post")] HttpRequestData req)
         {
             _logger.LogInformation("C# HTTP trigger function processed a request.");
             //This API is WAAAYYY too Fast, so adding a delay - JR.

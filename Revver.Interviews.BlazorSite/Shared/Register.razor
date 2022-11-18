@@ -56,7 +56,7 @@
     public async Task RegisterUser()
     {
         var content = JsonSerializer.Serialize(userForRegistration);
-        var response = await Http.PostAsJsonAsync<UserForRegistrationDto>("http://localhost:7046/api/Register", userForRegistration);
-        this.Message = response.Content.ToString() ?? string.Empty;
+        var response = await Http.GetFromJsonAsync<UserForRegistrationDto>("http://localhost:7046/api/Register");
+        this.Message = response.ToString() ?? string.Empty;
     }
 }
