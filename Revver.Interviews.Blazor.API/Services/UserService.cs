@@ -1,12 +1,10 @@
 ﻿
-using Revver.Interviews.Blazor.Services;
-using System.Threading.Tasks;
 
-namespace Revver.Interviews.API.Services
+namespace Revver.Interviews.Blazor.API.Services
 {
     public class UserService
     {
-        public async Task RegisterAsync(UserForRegistrationDto user) 
+        public async Task RegisterAsync(dynamic user) 
         {
             if (user.ConfirmPassword != user.Password)
             {

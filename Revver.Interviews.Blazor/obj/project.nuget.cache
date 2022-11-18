@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "guEx8MelM3FzEQCJqTlhzGQKMK8D34/A21fGqzU4uowtWKYLrV0BlqXRVu7vPdaJW5fOI/LlvrBleqh/y/J+Og==",
+  "dgSpecHash": "ZjETzspPE9ewaU7ZBgHNxz5I0nFjcNyOXWZ6MTtJEDulrpVik8M7hWOaeujzjQBgeyS70giA0gf5lfcU/4OZgQ==",
   "success": true,
-  "projectFilePath": "C:\\Code\\Interviews\\Blazor\\Revver.Interviews.Blazor\\Revver.Interviews.Blazor.csproj",
+  "projectFilePath": "C:\\Code\\Interviews\\Blazor\\Revver.Interviews.Blazor\\Revver.Interviews.Blazor77.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\JimRieck\\.nuget\\packages\\microsoft.aspnetcore.authorization\\7.0.0\\microsoft.aspnetcore.authorization.7.0.0.nupkg.sha512",
     "C:\\Users\\JimRieck\\.nuget\\packages\\microsoft.aspnetcore.components\\7.0.0\\microsoft.aspnetcore.components.7.0.0.nupkg.sha512",

@@ -1807,9 +1807,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Code\\Interviews\\Blazor\\Revver.Interviews.Blazor\\Revver.Interviews.Blazor.csproj",
-      "projectName": "Revver.Interviews.Blazor",
-      "projectPath": "C:\\Code\\Interviews\\Blazor\\Revver.Interviews.Blazor\\Revver.Interviews.Blazor.csproj",
+      "projectUniqueName": "C:\\Code\\Interviews\\Blazor\\Revver.Interviews.Blazor\\Revver.Interviews.Blazor77.csproj",
+      "projectName": "Revver.Interviews.Blazor77",
+      "projectPath": "C:\\Code\\Interviews\\Blazor\\Revver.Interviews.Blazor\\Revver.Interviews.Blazor77.csproj",
       "packagesPath": "C:\\Users\\JimRieck\\.nuget\\packages\\",
       "outputPath": "C:\\Code\\Interviews\\Blazor\\Revver.Interviews.Blazor\\obj\\",
       "projectStyle": "PackageReference",
