@@ -2,6 +2,7 @@ using System.Net;
 using Microsoft.Azure.Functions.Worker;
 using Microsoft.Azure.Functions.Worker.Http;
 using Microsoft.Extensions.Logging;
+using Newtonsoft.Json;
 
 namespace Revver.Interviews.Blazor.API
 {
@@ -15,15 +16,14 @@ namespace Revver.Interviews.Blazor.API
         }
 
         [Function("Register")]
-        public HttpResponseData Run([HttpTrigger(AuthorizationLevel.Function, "post")] HttpRequestData req)
+        public HttpResponseData Run([HttpTrigger(AuthorizationLevel.Function, "get")] HttpRequestData req)
         {
             _logger.LogInformation("C# HTTP trigger function processed a request.");
-            //This API is WAAAYYY too Fast, so adding a delay - JR.
-            Thread.Sleep(TimeSpan.FromSeconds(5));
+            
             var response = req.CreateResponse(HttpStatusCode.OK);
             response.Headers.Add("Content-Type", "application/json");
-            
-            response.WriteString("Welcome to the Blazor Website!");
+            var message = JsonConvert.SerializeObject("Welcome to the Blazor Website!");
+            response.WriteString(message);
 
             return response;
         }

@@ -13,7 +13,7 @@ namespace Revver.Interviews.BlazorSite.Data
             {
                 Date = startDate.AddDays(index),
                 TemperatureC = Random.Shared.Next(-20, 55),
-                //TODO: add summaries here at random
+                Summary = Summaries[Random.Shared.Next(Summaries.Length)]
             }).ToArray());
         }
     }
