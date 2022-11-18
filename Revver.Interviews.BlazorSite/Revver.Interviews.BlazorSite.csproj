@@ -11,6 +11,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Remove="Shared\Registerold.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Include="Services\RegistrationResponseDto.cs" />
   </ItemGroup>
 

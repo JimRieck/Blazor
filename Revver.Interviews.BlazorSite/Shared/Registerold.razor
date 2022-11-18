@@ -3,16 +3,16 @@
 @using Revver.Interviews.BlazorSite.Services;
 @using System.Text.Json;
 
-<h3>@Message</h3>
+<h3>Register</h3>
 
 @if (ShowRegistrationErrors)
 {
-    <div class="alert alert-danger" role="alert">
-        @foreach (var error in Errors)
-        {
-            <p>@error</p>
-        }
-    </div>
+        <div class="alert alert-danger" role="alert">
+            @foreach (var error in Errors)
+            {
+                <p>@error</p>
+            }
+        </div>
 }
 <EditForm Model="userForRegistration" OnValidSubmit="@RegisterUser" class="card card-body bg-light mt-5">
     <DataAnnotationsValidator />
@@ -48,15 +48,12 @@
 
     [Inject]
     public NavigationManager NavigationManager { get; set; }
-
     public bool ShowRegistrationErrors { get; set; }
     public IEnumerable<string> Errors { get; set; }
-    private string Message { get; set; } = "Register";
-
     public async Task RegisterUser()
     {
         var content = JsonSerializer.Serialize(userForRegistration);
-        var response = await Http.PostAsJsonAsync<UserForRegistrationDto>("http://localhost:7046/api/Register", userForRegistration);
-        this.Message = response.Content.ToString() ?? string.Empty;
+        await Http.GetFromJsonAsync<UserForRegistrationDto>("http://localhost:7046/api/Register");
+        
     }
 }

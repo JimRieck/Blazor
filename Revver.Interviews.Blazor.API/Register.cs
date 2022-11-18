@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using System.Net;
 using Microsoft.Azure.Functions.Worker;
 using Microsoft.Azure.Functions.Worker.Http;
@@ -16,14 +15,15 @@ namespace Revver.Interviews.Blazor.API
         }
 
         [Function("Register")]
-        public HttpResponseData Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", "post")] HttpRequestData req)
+        public HttpResponseData Run([HttpTrigger(AuthorizationLevel.Anonymous, "post")] HttpRequestData req)
         {
             _logger.LogInformation("C# HTTP trigger function processed a request.");
-
+            //This API is WAAAYYY too Fast, so adding a delay - JR.
+            Thread.Sleep(TimeSpan.FromSeconds(5));
             var response = req.CreateResponse(HttpStatusCode.OK);
-            response.Headers.Add("Content-Type", "text/plain; charset=utf-8");
-
-            response.WriteString("Welcome to Azure Functions!");
+            response.Headers.Add("Content-Type", "application/json");
+            
+            response.WriteString("Welcome to the Blazor Website!");
 
             return response;
         }
