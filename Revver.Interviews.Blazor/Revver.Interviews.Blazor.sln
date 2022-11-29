@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33103.184
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Revver.Interviews.Blazor.API", "..\Revver.Interviews.Blazor.API\Revver.Interviews.Blazor.API.csproj", "{0348362B-3C3B-45DE-8984-2581DFEBCBE1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Revver.Interviews.Blazor.API", "..\Revver.Interviews.Blazor.API\Revver.Interviews.Blazor.API.csproj", "{0348362B-3C3B-45DE-8984-2581DFEBCBE1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Revver.Interviews.BlazorSite", "..\Revver.Interviews.BlazorSite\Revver.Interviews.BlazorSite.csproj", "{B8F4E323-507D-413F-A369-83F411A7BCA6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Revver.Interviews.BlazorSite", "..\Revver.Interviews.BlazorSite\Revver.Interviews.BlazorSite.csproj", "{B8F4E323-507D-413F-A369-83F411A7BCA6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,0 +1,52 @@
+﻿@page "/RomanNumeralCalc"
+@inject HttpClient Http
+@using Revver.Interviews.BlazorSite.Services;
+@using System.Text.Json;
+<h3>Roman Numeral Calcultor
+
+</h3>
+<div>Create a RomanNumerals class that can convert a roman numeral to and from an integer value. It should follow the API demonstrated in the examples below. Multiple roman numeral values will be tested for each helper method.
+</div>
+
+<div>Modern Roman numerals are written by expressing each digit separately starting with the left most digit and skipping any digit with a value of zero. In Roman numerals 1990 is rendered: 1000=M, 900=CM, 90=XC; resulting in MCMXC. 2008 is written as 2000=MM, 8=VIII; or MMVIII. 1666 uses each Roman symbol in descending order: MDCLXVI.</div>
+
+<div>Input range : <code>1 less than or = n less than 4000</code></div>
+
+<div>In this kata 4 should be represented as IV, NOT as IIII (the "watchmaker's four").</div>
+
+<div>
+    Examples
+Symbol	Value
+I	1
+II  2
+III 3
+IV	4
+V	5
+X	10
+L	50
+C	100
+D	500
+M	1000
+</div>
+
+<EditForm Model="@romanNumeral" >
+    <div class="form-group row">
+        <label class="col-md-1 col-form-label">Integer:</label>
+        <div class="col-md-1">
+            <InputNumber class="form-control" @bind-Value="romanNumeral.Number" onblur="@ConvertToRomanNumeral" />
+        </div>
+    </div>
+</EditForm>
+
+@code {
+
+    private RomanNumeral romanNumeral = new RomanNumeral();
+    private string Message { get; set; } = "Convert To Roman Numeral";
+
+    public async Task ConvertToRomanNumeral()
+    {
+        var content = JsonSerializer.Serialize(romanNumeral);
+        var response = await Http.PostAsJsonAsync<string>("http://localhost:7046/api/ConvertRomanNumeral", content);
+        this.Message = response.ToString();
+    }
+}
