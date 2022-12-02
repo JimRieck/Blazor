@@ -2,32 +2,23 @@
 @inject HttpClient Http
 @using Revver.Interviews.BlazorSite.Services;
 @using System.Text.Json;
-<h3>Roman Numeral Calcultor
+@using System.Text;
+<h3>Roman Numeral Calcultor</h3>
 
-</h3>
-<div>Create a RomanNumerals class that can convert a roman numeral to and from an integer value. It should follow the API demonstrated in the examples below. Multiple roman numeral values will be tested for each helper method.
-</div>
+<div>Your objective is to continue the work to convert a number to a roman numeral.  An example of this would be the number 1,000 would equal M or the number 1003 would be MIII.</div>
 
-<div>Modern Roman numerals are written by expressing each digit separately starting with the left most digit and skipping any digit with a value of zero. In Roman numerals 1990 is rendered: 1000=M, 900=CM, 90=XC; resulting in MCMXC. 2008 is written as 2000=MM, 8=VIII; or MMVIII. 1666 uses each Roman symbol in descending order: MDCLXVI.</div>
-
-<div>Input range : <code>1 less than or = n less than 4000</code></div>
-
-<div>In this kata 4 should be represented as IV, NOT as IIII (the "watchmaker's four").</div>
-
-<div>
-    Examples
-Symbol	Value
-I	1
-II  2
-III 3
-IV	4
-V	5
-X	10
-L	50
-C	100
-D	500
-M	1000
-</div>
+<div>Here are the roman numerals from 1 to 1000.</div>
+<div>Symbol	Value</div>
+<div>I	    1</div>
+<div>II     2</div>
+<div>III    3</div>
+<div>IV	    4</div>
+<div>V	    5</div>
+<div>X	    10</div>
+<div>L	    50</div>
+<div>C	    100</div>
+<div>D	    500</div>
+<div>M	    1000</div>
 
 <EditForm Model="@romanNumeral" >
     <div class="form-group row">
@@ -45,8 +36,9 @@ M	1000
 
     public async Task ConvertToRomanNumeral()
     {
-        var content = JsonSerializer.Serialize(romanNumeral);
-        var response = await Http.PostAsJsonAsync<string>("http://localhost:7046/api/ConvertRomanNumeral", content);
+        var content = JsonSerializer.Serialize<RomanNumeral>( value: romanNumeral);
+        var request = new StringContent(content, Encoding.UTF8, "application/json");
+        var response = await Http.PostAsync("http://localhost:7046/api/ConvertRomanNumeral", request);
         this.Message = response.ToString();
     }
 }

@@ -4,6 +4,7 @@ using Microsoft.Azure.Functions.Worker;
 using Microsoft.Azure.Functions.Worker.Http;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
+using Revver.Interviews.BlazorSite.Services;
 
 namespace Revver.Interviews.Blazor.API
 {
@@ -20,13 +21,14 @@ namespace Revver.Interviews.Blazor.API
         public async Task<HttpResponseData> Run([HttpTrigger(AuthorizationLevel.Function, "get", "post")] HttpRequestData req)
         {
             _logger.LogInformation("C# HTTP trigger function processed a request.");
-            string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
+
+            using var reader = new StreamReader(req.Body);
+            string requestBody = await reader.ReadToEndAsync();
 
             // use Json.NET to deserialize the posted JSON into a C# dynamic object
-            dynamic data = JsonConvert.DeserializeObject(requestBody);
+            RomanNumeral romanNumeral = JsonConvert.DeserializeObject<RomanNumeral>(requestBody);
             var response = req.CreateResponse(HttpStatusCode.OK);
-            response.Headers.Add("Content-Type", "application/json;");
-
+            
             response.WriteString("Welcome to Azure Functions!");
 
             return response;
